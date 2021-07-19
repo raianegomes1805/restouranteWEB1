@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+    font-family: 'Lato', sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+button {
+	display: flex;
+	align-items: center;
+	padding:  8px 8px;
+	background: #FFFFFF;
+	border: 1px solid #eb32db;
+	box-sizing: border-box;
+	border-radius: 2px;
+	color: #ff0080;
+	font-size: 10px;
+	line-height: 10px;
+  float:left;
+}
+
+.font-ligth {
+  font-weight: 300;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.navigation {
+  width: 100px;
+  height: 100vh;
+}
+
+.order_messageConfirm{
+  color:#df68b1;
+}
+
+
+.menu {
+  flex: 1;
+  height: 100vh;
+  background: #f50489;
+}
+
+.menu-container {
+  padding: 50px;
+}
+
+.menu-itens {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+}
+
+.item-menu {
+  width: 70px;
+  height: 100px;
+  background: #FFFFFF;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-menu.active {
+  background: #ffb5f9;
+}
+
+.item-img {
+  width: 54px;
+  height: 54px;
+  border-radius: 13px;
+  background: #FFFFFF;
+  border: 1px solid rgb(255, 0, 242);
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 50%;
+  filter: grayscale();
+}
+
+.item-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.item-menu.active .item-img {
+  border: none;
+  opacity: initial;
+  filter: none;
+}
+
+.item-title {
+  font-size: 12px;
+  font-weight: 500;
+  color: #fd0094;
+}
+
+.item-menu.active .item-title {
+  color: #000000;
+}
+
+.menu-list {
+  list-style: none;
+  max-height: 60vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 15px;
+  overflow: auto;
+}
+
+
+
+.list-menu {
+  width: 140px;
+  height: 165px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.list-img {
+  width: 78px;
+  height: 78px;
+  border-radius: 50%;
+  background: #FDF6E7;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.list-img img{
+  width:100%;
+  height:100%;
+}
+
+
+.list-name,
+.list-price {
+  font-size: 14px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.list-name {
+  color: #000000;
+  margin-bottom: 5px;
+}
+
+.list-price {
+  color: #A9A9A9;
+}
+
+.order {
+  min-width: 400px;
+  height: 100vh;
+  padding: 35px;
+}
+
+.order-list {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60vh;
+  list-style: none;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  border-bottom: 1px dashed #f800cf;
+}
+
+.order-item {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-img {
+  width: 66px;
+  height: 48px;
+  border-radius: 14px;
+  background: #FFF1F4;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order-img img {
+  width: 50px;
+}
+
+.order-text {
+  display: flex;
+  flex-direction: column;
+  flex: 2;
+  padding: 20px;
+}
+
+.order-quantity {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+
+.order-quantity span {
+  box-sizing: border-box;
+  padding-left: 10px;
+}
+
+.order-qty {
+  font-size: 12px;
+  overflow: none;
+  border: none;
+  background: #df68b1;
+  width: 44px;
+  height: 44px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.order-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-value {
+  display: flex;
+}
+
+.order_messageConfirm {
+  visibility: hidden;
+}

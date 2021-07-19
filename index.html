@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Delivery Food</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <header class="navigation">
+      <a href="index.html" class="logo"><img src="img/logo.svg" alt="logo"></a>
+    </header>
+
+    <main class="menu">
+      <div class="menu-container">
+        <div class="menu-header">
+          <h1 class="menu-header-title">Menu <span class="font-ligth">Categoria</span></h1>
+          <ul class="menu-itens">
+
+            <li>
+              <a class="item-menu active" data-category="all" href="#">
+                <div class="item-img">
+                  <img src="/img/card-foodband.jpg" alt="">
+                </div>
+                <span class="item-title">Todos</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="item-menu" data-category="sushi" href="#">
+                <div class="item-img">
+                  <img src="/img/card-zadina.jpg" alt="">
+                </div>
+                <span class="item-title">Sushi</span>
+              </a>
+            </li>
+
+            <li>
+              <a class="item-menu" data-category="pizza" href="#">
+                <div class="item-img">
+                  <img src="/img/promo-img.png" alt="">
+                </div>
+                <span class="item-title">Pizza</span>
+              </a>
+            </li>
+
+          </ul>
+        </div>
+
+        <section class="menu-content">
+          <h2 class="content-title">Escolha <span class="font-ligth">Pedido</span></h2>
+
+          <ul class="menu-list">
+
+          </ul>
+        </section>
+      </div>
+    </main>
+
+    <section class="order">
+      <h2 class="content-title">Escolha <span class="font-ligth">Pedido</span></h2>
+      <ul class="order-list"></ul>
+      <div class="order-info">
+        <div class="order-value">
+          <p>Valor: </p>
+          <p class="order_totalPrice">R$ 12,50</p>
+        </div>
+        <div class="order-options">
+          <button class="order_confirm">Confirmar</button>
+          <button class="order_cancel">Cancelar</button>
+        </div>
+      </div>
+      <p class="order_messageConfirm">Compra finalizada com sucesso!</p>
+
+    </section>
+  </div>
+  <script type="module" src="./main.js" defer></script>
+
+</body>
+
+</html>
